@@ -1,0 +1,16 @@
+streamlit>=1.36.0
+pandas>=2.2.0
+numpy>=1.26.0
+plotly>=5.0.0
+folium>=0.17.0
+streamlit-folium>=0.22.1
+fastapi>=0.111.0
+uvicorn>=0.30.0
+pydantic>=2.7.0
+SQLAlchemy>=2.0.0
+psycopg2-binary>=2.9.9
+geoalchemy2>=0.15.0
+shapely>=2.0.0
+ortools>=9.10.0
+pytest>=8.0.0
+scikit-learn>=1.4.0
