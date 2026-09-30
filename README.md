@@ -27,7 +27,7 @@ GARUDA is a prototype decision-support platform for AI-driven proactive disaster
 
 ## Demo data status
 
-The MVP uses synthetic prototype data for the pilot region. It is explicitly demo-only and should not be presented as official government data.
+The MVP uses synthetic prototype data for village-level population and vulnerability, baseline hazard exposure, relocation sites and their capacities, and resource inventory. The 2011 Census workbook supplies matched subdistrict totals for relocation scenario sizing and resource requirements; these are not village counts. The dashboard also fetches a live daily district-rainfall observation from IMD, but rainfall does not affect risk scores. Synthetic values are demo-only and should not be presented as official government data.
 
 ## Local setup
 

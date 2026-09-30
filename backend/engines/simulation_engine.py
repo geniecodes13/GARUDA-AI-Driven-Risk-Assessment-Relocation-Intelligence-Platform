@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+from backend.engines.capacity_engine import calculate_capacity
+
 
 def run_scenario(population, percentage_to_relocate, sites, resources=None):
     """Compute the what-if relocation scenario and show capacity gap."""
     relocated = int(population * max(0, min(1, percentage_to_relocate / 100)))
     safe_sites = [site for site in sites if site["status"] == "SAFE"]
-    total_capacity = sum(site["land_capacity"] for site in safe_sites)
+    total_capacity = sum(calculate_capacity(site)["effective_capacity"] for site in safe_sites)
     capacity_gap = max(0, relocated - total_capacity)
     resource_gap = 0
     if resources:
